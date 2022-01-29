@@ -30,7 +30,7 @@
 	  <distributionManagement>
 	    <snapshotRepository>
 	        <id>gopal</id>
-	        <url>http://172.16.50.189:8081/repository/my-app-snapshots/</url>
+	        <url>http://172.16.50.189:8081/repository/my-app-snapshot/</url>
 	    </snapshotRepository>
 	    <repository>
 	        <id>gopal</id>
