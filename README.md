@@ -1,24 +1,17 @@
-# Maven - How to create a Java web application project
-Maven 3, Spring 5 MVC, JUnit 5, Logback and Jetty web server. A simple web project to display a current date.
+# Maven – How to create a Java project
+Maven 3, Apache Commons Codec, a simple Java project to hash a string with the SHA-256 algorithm.
 
-Project Link - https://www.mkyong.com/maven/how-to-create-a-web-application-project-with-maven/
+Project Link - https://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/
 
 
-## 1. How to run this project?
-
-### 1.1 Test it with Jetty web server.
+## How to run this project?
 ```
 $ git clone https://github.com/mkyong/maven-examples.git
-$ cd java-web-project 
-$ mvn jetty:run
+$ cd java-project
+$ mvn package 
+$ java -jar target/java-project-1.0-SNAPSHOT.jar 123456
 ```
-Access http://localhost:8080
-
-
-### 1.2 Create a WAR file for deployment :
+Output
 ```
-$ git clone https://github.com/mkyong/maven-examples.git
-$ cd java-web-project 
-$ mvn package or mvn war:war
+8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 ```
-A WAR is generated at 'target/finalName'
