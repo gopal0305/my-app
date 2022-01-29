@@ -27,6 +27,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+	  <distributionManagement>
+	    <snapshotRepository>
+	        <id>gopal</id>
+	        <url>http://172.16.50.189:8081/repository/my-app-snapshots/</url>
+	    </snapshotRepository>
+	    <repository>
+	        <id>gopal</id>
+	        <url>http://172.16.50.189:8081/repository/my-app-release/</url>
+	    </repository>
+	</distributionManagement>
 
   <build>
     <finalName>my-app</finalName>
