@@ -26,6 +26,25 @@
 		    <artifactId>itext</artifactId>
 		    <version>2.1.7</version>
 		</dependency>
+		<plugin>
+   <groupId>org.sonatype.plugins</groupId>
+   <artifactId>nexus-staging-maven-plugin</artifactId>
+   <version>1.5.1</version>
+   <executions>
+      <execution>
+         <id>default-deploy</id>
+         <phase>deploy</phase>
+         <goals>
+            <goal>deploy</goal>
+         </goals>
+      </execution>
+   </executions>
+   <configuration>
+      <serverId>nexus</serverId>
+      <nexusUrl>http://localhost:8081/nexus/</nexusUrl>
+      <skipStaging>true</skipStaging>
+   </configuration>
+</plugin>
 	</dependencies>
 	
 </project>
