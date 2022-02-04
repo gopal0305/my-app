@@ -6,7 +6,7 @@
 
   <groupId>in.javahome</groupId>
   <artifactId>my-app</artifactId>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.6-SNAPSHOT</version>
   <packaging>war</packaging>
 
   <name>my-app Maven Webapp</name>
